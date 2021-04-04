@@ -56,8 +56,6 @@ elif look == "Keywords of this program":
         * Animation2
         * YinYang
         * Bot
-        * Credits
-        * Speak credits
         * Time
         * Speak time
         * Date
@@ -190,24 +188,6 @@ elif look == "Clock":
         msg = main()
         print(msg)
         mainloop()
-
-# Credits:
-
-elif look == "Credits":
-    print("This program is made by Rudransh Srivastav in python")
-
-# Speak credits:
-
-elif look == "Speak credits":
-     engine = pyttsx3.init('sapi5')
-     voices = engine.getProperty('voices')
-     engine.setProperty('voice', voices[0].id)
-
-     def speak(audio):
-        engine.say(audio)
-        engine.runAndWait()
-
-     speak("This program was made by Rudransh Srivastav in python")
 
 # Computer speak
 
